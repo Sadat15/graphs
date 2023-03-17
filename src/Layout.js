@@ -21,10 +21,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
+      <Link color="inherit" href=""></Link> {new Date().getFullYear()}
       {"."}
     </Typography>
   );
@@ -156,9 +153,7 @@ export default function Album() {
           align="center"
           color="text.secondary"
           component="p"
-        >
-          Something here to give the footer a purpose!
-        </Typography>
+        ></Typography>
         <Copyright />
       </Box>
       {/* End footer */}

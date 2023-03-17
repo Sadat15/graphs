@@ -1,7 +1,12 @@
+import Button from "@mui/material/Button";
+import Album from "./Layout";
+
 function App() {
   return (
     <div>
-      <div>App</div>
+      <Album />
+      {/* <div>App</div>
+      <Button variant="contained">Hello World</Button>
       <img
         id="inputimage"
         src={
@@ -19,7 +24,7 @@ function App() {
         alt=""
         width="500px"
         height="auto"
-      />
+      /> */}
     </div>
   );
 }

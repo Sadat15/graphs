@@ -14,10 +14,10 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Select, InputLabel, FormControl, MenuItem } from "@mui/material";
 import Footer from "./Footer";
+import Dropdown from "./Dropdown";
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const cards = [1];
 
 const theme = createTheme();
 
@@ -57,39 +57,17 @@ export default function Album() {
               align="center"
               color="text.secondary"
               paragraph
-            ></Typography>
+            >
+              testing
+            </Typography>
             <Stack
               sx={{ pt: 4 }}
               direction="row"
               spacing={2}
               justifyContent="center"
             >
-              <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label"></InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value="test"
-                  label="Age"
-                  // onChange={handleChange}
-                >
-                  <MenuItem value={"A"}>A</MenuItem>
-                  <MenuItem value={"B"}>B</MenuItem>
-                </Select>
-              </FormControl>
-              <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label"></InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value="test"
-                  label="Age"
-                  // onChange={handleChange}
-                >
-                  <MenuItem value={"A"}>A</MenuItem>
-                  <MenuItem value={"B"}>B</MenuItem>
-                </Select>
-              </FormControl>
+              <Dropdown />
+              <Dropdown />
             </Stack>
           </Container>
         </Box>
@@ -108,10 +86,10 @@ export default function Album() {
                   <CardMedia
                     component="img"
                     sx={{
-                      // 16:9
-                      pt: "56.25%",
+                      16: 9,
+                      // pt: "56.25%",
                     }}
-                    image="https://source.unsplash.com/random"
+                    image="https://www.investopedia.com/thmb/ilebTtfvaQER39ue8gEkMIpP6MY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Histogram1-92513160f945482e95c1afc81cb5901e.png"
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
@@ -133,7 +111,6 @@ export default function Album() {
           </Grid>
         </Container>
       </main>
-
       <Footer />
     </ThemeProvider>
   );
